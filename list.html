@@ -1,0 +1,18 @@
+<input type="text" ng-model="query" placeholder="Search..."/>
+<ul class="rider-list">
+    <li ng-repeat="rider in riders | filter:query | orderBy:'number'">
+        <a href="#/riders/{{rider.number}}">
+            <img ng-src="img/riders/{{rider.number}}.jpg" alt="{{rider.name}}"/>
+
+
+            <div class="info">
+                <p class="flag-n">
+                    <img alt="{{rider.nation}}" ng-src="img/nation/{{rider.nation}}.png" height="27" width="42">
+                    <span class="num">{{rider.number}}</span>
+                </p>
+
+                <p class="name">{{rider.name}}</p>
+            </div>
+        </a>
+    </li>
+</ul>

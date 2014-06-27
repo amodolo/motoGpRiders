@@ -44,3 +44,29 @@ a:link, a:visited {
     font-weight: bold;
     float: right;
 }
+
+.rider-details {
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding:1em;
+}
+
+.rider-details p {
+    margin-top: 1px;
+    font-size: 12px;
+}
+
+.rider-details .number{
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.rider-details .name{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.rider-details .team{
+    font-size: 1em;
+    font-weight: bold;
+}

@@ -37,6 +37,15 @@ var riders = [
     }
 ]
 
-var mainController = function ($scope) {
+var controllerManager = angular.module('controllers', []);
+
+controllerManager.controller('ridersListController', function($scope){
     $scope.riders = riders;
-}
+});
+
+
+controllerManager.controller('riderDetailsController', function($scope, $routeParams){
+    $scope.rider = riders.filter(function(rider){
+        return rider.number == $routeParams.number;
+    })[0];
+});

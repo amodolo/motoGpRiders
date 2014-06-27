@@ -1,28 +1,16 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="motoGpRiders">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Moto GP riders</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="app.js"></script>
     <script src="controller.js"></script>
 
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body ng-controller="mainController">
-<input type="text" ng-model="query" placeholder="Search..." />
-<ul class="rider-list">
-    <li ng-repeat="rider in riders | filter:query | orderBy:'number'">
-        <img ng-src="img/riders/{{rider.number}}.jpg" alt="{{rider.name}}"/>
-
-        <div class="info">
-            <p class="flag-n">
-                <img alt="{{rider.nation}}" ng-src="img/nation/{{rider.nation}}.png" height="27" width="42">
-                <span class="num">{{rider.number}}</span>
-            </p>
-
-            <p class="name">{{rider.name}}</p>
-        </div>
-    </li>
-</ul>
+<body>
+<div ng-view></div>
 </body>
 </html>
