@@ -7,6 +7,19 @@
     <script src="controller.js"></script>
 </head>
 <body ng-controller="mainController">
-<p>Hello {{rider.name}}</p>
+<ul>
+    <li ng-repeat="rider in riders">
+        <img ng-src="img/riders/{{rider.number}}.jpg" alt="{{rider.name}}"/>
+
+        <div class="info">
+            <p class="flag-n">
+                <img alt="{{rider.nation}}" ng-src="img/nation/{{rider.nation}}.png" height="27" width="42">
+                <span class="num">{{rider.number}}</span>
+            </p>
+
+            <p class="name">{{rider.name}}</p>
+        </div>
+    </li>
+</ul>
 </body>
 </html>
