@@ -5,9 +5,11 @@
     <title>Moto GP riders</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
     <script src="controller.js"></script>
+
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body ng-controller="mainController">
-<ul>
+<ul class="rider-list">
     <li ng-repeat="rider in riders">
         <img ng-src="img/riders/{{rider.number}}.jpg" alt="{{rider.name}}"/>
 

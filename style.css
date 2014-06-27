@@ -1,0 +1,46 @@
+html{
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+}
+
+ul{
+    list-style: none outside none;
+}
+
+a:link, a:visited {
+    color: #5D5D5D;
+}
+
+.search{
+    padding-left: 1em;
+}
+.rider-list{
+    padding-left: 0em;
+}
+
+.rider-list li p a {
+    text-decoration: none;
+    color: #5D5D5D;
+}
+
+.rider-list li {
+    width: 206px;
+    border: 1px solid #C1C1C1;
+    margin: 0px 10px 10px 0px;
+    float: left;
+}
+
+.rider-list .info {
+    padding: 10px;
+    height: 81px;
+    background: -moz-linear-gradient(center bottom , #F6F6F6 9%, #FFF 92%) repeat scroll 0px 0px transparent;
+}
+
+.rider-list .info {
+    font-weight: bold;
+}
+
+.rider-list .info .flag-n .num {
+    font-size: 36px;
+    font-weight: bold;
+    float: right;
+}
