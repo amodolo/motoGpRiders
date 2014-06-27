@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body ng-controller="mainController">
+<input type="text" ng-model="query" placeholder="Search..." />
 <ul class="rider-list">
-    <li ng-repeat="rider in riders">
+    <li ng-repeat="rider in riders | filter:query | orderBy:'number'">
         <img ng-src="img/riders/{{rider.number}}.jpg" alt="{{rider.name}}"/>
 
         <div class="info">
