@@ -1,0 +1,30 @@
+<form name="newRiderForm">
+    <div>
+        <label>Name</label>
+        <input name="name" type="text" ng-model="rider.name" required/>
+        <span ng-show="newRiderForm.name.$dirty && newRiderForm.name.$error.required">Valore obbligatorio!</span>
+    </div>
+    <div>
+        <label>Number</label>
+        <input name="number" type="number" ng-model="rider.number" required/>
+    </div>
+    <div>
+        <label>Team</label>
+        <input name="team" type="text" ng-model="rider.team" required />
+    </div>
+    <div>
+        <label>City</label>
+        <input name="city" type="text" ng-model="rider.city" required />
+    </div>
+    <div>
+        <label>Weight</label>
+        <input name="weight" type="text" ng-model="rider.weight" required />
+    </div>
+    <div>
+        <label>Height</label>
+        <input name="height" type="text" ng-model="rider.height" required />
+    </div>
+    <button ng-click="reset()">Annulla</button>
+    <button ng-click="createRider(rider);" ng-disabled="newRiderForm.$invalid">Crea</button>
+</form>
+<!--Dati rider {{rider | json}}-->

@@ -10,6 +10,11 @@ module.config(['$routeProvider',
             controller: 'ridersListController'
         }),
 
+        $routeProvider.when('/riders/new', {
+            templateUrl: 'newRider.html',
+            controller: 'newRiderController'
+        }),
+
         $routeProvider.when('/riders/:number', {
             templateUrl: 'details.html',
             controller: 'riderDetailsController'

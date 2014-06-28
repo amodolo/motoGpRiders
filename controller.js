@@ -49,3 +49,31 @@ controllerManager.controller('riderDetailsController', function($scope, $routePa
         return rider.number == $routeParams.number;
     })[0];
 });
+
+controllerManager.controller('newRiderController', function($scope){
+    $scope.reset = function(){
+        $scope.rider={};
+    };
+
+    $scope.createRider= function(rider){
+        riders.push(rider);
+        window.history.back();
+    };
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
