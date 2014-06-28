@@ -70,3 +70,24 @@ a:link, a:visited {
     font-size: 1em;
     font-weight: bold;
 }
+
+.new-rider button{
+    margin-top: 1em;
+    width:7.5em;
+}
+
+.new-rider input {
+    width: 15em;
+}
+
+.new-rider .reset {
+    color: #373737;
+}
+
+.new-rider .save {
+    color: #008200;
+}
+
+.new-rider .warning-message{
+    color:orange;
+}

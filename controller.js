@@ -20,6 +20,7 @@ controllerManager.controller('riderDetailsController', function($scope, $routePa
     $scope.rider = riders.filter(function(rider){
         return rider.number == $routeParams.number;
     })[0];
+    console.log($scope.rider);
 });
 
 controllerManager.controller('newRiderController', function($scope, $http){
@@ -30,8 +31,7 @@ controllerManager.controller('newRiderController', function($scope, $http){
     $scope.createRider= function(rider){
         $http.post('riders.json', rider).
             success(function(data, status){
-                alert('Salvataggio erreffuato!');
-                riders.push(rider);
+                alert('Salvataggio effettuato!');
                 window.history.back();
             }).
             error(function(data, status){
