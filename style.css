@@ -44,3 +44,8 @@ a:link, a:visited {
     font-weight: bold;
     float: right;
 }
+
+.rider-list .info .flag-n img {
+    width: 42px;
+    height: 27px;
+}
