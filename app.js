@@ -10,13 +10,13 @@ module.config(['$routeProvider',
             controller: 'ridersListController'
         }),
 
-            $routeProvider.when('/riders/:number', {
-                templateUrl: 'details.html',
-                controller: 'riderDetailsController'
-            }),
+        $routeProvider.when('/riders/:number', {
+            templateUrl: 'details.html',
+            controller: 'riderDetailsController'
+        }),
 
-            $routeProvider.otherwise({
-                redirectTo: '/riders'
-            })
+        $routeProvider.otherwise({
+            redirectTo: '/riders'
+        })
     }
 ]);
