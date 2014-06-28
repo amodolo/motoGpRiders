@@ -3,8 +3,7 @@ var module = angular.module('motoGpRiders', [
     'controllers'
 ]);
 
-module.config(['$routeProvider',
-    function ($routeProvider) {
+module.config(function ($routeProvider) {
         $routeProvider.when('/riders', {
             templateUrl: 'list.html',
             controller: 'ridersListController'
@@ -19,4 +18,4 @@ module.config(['$routeProvider',
             redirectTo: '/riders'
         })
     }
-]);
+);
